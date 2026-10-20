@@ -1,132 +1,35 @@
-# Nettverk-og-Infrastruktur-Laber
-**Labene ble utført fysisk med Cisco utstyr!**
+# cisco-networking-labs
 
-Samling av praktiske nettverkstekniske prosjekter gjennomført i emnet Datakommunikasjon og nettverk (DCST1006) og Sammenkoblede nettverk og nettverkssikkerhet (DCST2001). Labene ga praktisk erfaring av nettverksprotokoller, distribuert systemkommunikasjon og bedriftsnettverksarkitektur.
+An overview of the hands-on networking labs I did in two NTNU courses: **DCST1006 Data communication and networks** and **DCST2001 Interconnected networks and network security**. **The labs were done on physical Cisco equipment**, with Cisco Packet Tracer for simulation. This repo contains a description only, no configurations.
 
-## **Tekniske Ressurser**
+## Labs
+**DCST1006**
+- Lab 7: IP subnetting and VLSM
+- Lab 9: IPv6/ICMPv6, and TCP/HTTP analysis in Wireshark
+- Lab 12: VLANs with router-on-a-stick
+- Lab 14: DHCPv4 and DHCPv6
+- Lab 15: HSRP
+- Lab 17: Switch security
+- ...plus several introductory labs
 
-### **Gjennomførte Laber (DCST1006)**
-- **Lab 7**: IP Subnetting og VLSM 
-- **Lab 9**: IPv6/ICMPv6 og Wireshark TCP/HTTP analyse 
-- **Lab 12**: VLAN Router-on-a-Stick 
-- **Lab 14**: DHCPv4/DHCPv6 implementering 
-- **Lab 15**: HSRP konfigurasjon
-- **Lab 17**: Switch-sikkerhet konfigurasjon
-- *...og flere grunnleggende networking labs*
+**DCST2001**
+- Lab 34: Static routing and path control
+- Lab 35: OSPF (mandatory lab)
+- Lab 36: Advanced network security
+- Lab 37: Access control lists (mandatory lab)
 
-### **Avanserte Laber (DCST2001)**
-- **Lab 35**: OSPF (Open Shortest Path First)
-- **Lab 37**: Access Control Lists (ACL) 
-- **Lab 36**: Advanced Network Security
-- **Lab 34**: Static Routing & Path Control
+## Topics covered
+- **Switching:** VLAN segmentation, inter-VLAN routing, STP and EtherChannel.
+- **Addressing:** subnetting and VLSM, IPv6 with SLAAC, DHCPv4/DHCPv6 and DHCP relay.
+- **Routing:** static routes, administrative distance and OSPF.
+- **High availability:** HSRP for first-hop redundancy and failover.
+- **Security:** standard and extended ACLs, switch security, device hardening.
+- **Troubleshooting:** Wireshark packet capture, ping, traceroute, RTT and ARP analysis.
 
-### **Tekniske Platformer**
-- **Cisco Packet Tracer** - Nettverks-simulering og konfigurasjon
-- **Cisco IOS** - Enterprise ruter/switch kommandolinje
-- **Wireshark** - Pakke-analyse og protokoll-debugging
-- **IPv6 Implementation** - SLAAC, DHCPv6, ICMPv6
-- **Enterprise Security** - ACLs, network hardening, access control
+## Tech stack
+Cisco IOS (routers and switches), Cisco Packet Tracer, Wireshark.
 
-
-## **Implementering av Nettverksprotokoller**
-
-### VLAN & Inter-VLAN Routing 
-**Teknologier**: Cisco-svitsjer, Router-on-a-Stick, VLAN-segmentering  
-**Nøkkellæring**: Layer 2/3 kommunikasjon for distribuert videokonferansearkitektur  
-**Relevans**: Nettverksisolering kritisk for mikrotjeneste-kommunikasjon  
-
-### DHCPv4/DHCPv6 & SLAAC
-**Teknologier**: Dynamisk IP-tildeling, IPv6 auto-konfigurasjon, DHCP relay  
-**Nøkkellæring**: Automatisert nettverkskonfigurasjon og tjenesteoppdagelse  
-**Relevans**: Dynamisk tjenestetildeling for skalerbare sky-videotjenester  
-
-### IPv6 & ICMPv6 Analyse
-**Teknologier**: IPv6-adressering, SLAAC, Router Advertisements, ICMPv6  
-**Nøkkellæring**: Moderne IP-protokoller og neighbor discovery  
-**Relevans**: IPv6 essensielt for globale videokonferanseplattformer  
-
----
-
-## **Høy Tilgjengelighet & Lastdistribusjon**
-
-### HSRP (Hot Standby Router Protocol)
-**Teknologier**: First Hop Redundancy, automatisk failover, virtuell IP  
-**Nøkkellæring**: Failover-mekanismer og tjenestekontinuitet  
-**Relevans**: **Kritisk** for feiltolerante videokonferanse-infrastrukturer  
-
-### STP & EtherChannel 
-**Teknologier**: Spanning Tree Protocol, Link Aggregation, redundante stier  
-**Nøkkellæring**: Nettverksresiliens og båndbreddeoptimalisering  
-**Relevans**: Load balancing for distribuerte videotjenester  
-
-### OSPF Implementering - **OBLIGATORISK LAB**
-**Teknologier**: Dynamisk routing, link-state protokoll, area-design  
-**Nøkkellæring**: Skalerbar routing og nettverkskonvergering  
-**Relevans**: Intelligente path-selection i video-distribusjonsnettverk  
-
-### Statisk Ruting & Path Control
-**Teknologier**: Route tables, administrative distance, route redistribution  
-**Nøkkellæring**: Granular control over nettverks-traffic flow  
-**Relevans**: Video-traffic routing og QoS optimalisering  
-
----
-
-## **Nettverkssikkerhet & Ytelse**
-
-### Access Control Lists (ACL) - **OBLIGATORISK LAB**
-**Teknologier**: Standard/Extended ACLs, traffic filtering, security policies  
-**Nøkkellæring**: Network-level access control og threat mitigation  
-**Relevans**: **Fundamental** for sikring av enterprise videokonferanse-traffic  
-
-### Avansert Nettverkssikkerhet
-**Teknologier**: Advanced security protocols, intrusion prevention, network hardening  
-**Nøkkellæring**: Multi-layered security approach  
-**Relevans**: Sikring av sensitive business communications  
-
-### Wireshark Protokoll-analyse
-**Teknologier**: Pakkefangst, TCP/HTTP-analyse, protokoll-debugging  
-**Nøkkellæring**: Nettverks-ytelsesbegrensninger og optimalisering  
-**Relevans**: **Essensielt** for video-streaming protokoller og latens-reduksjon  
-
-### Nettverks Diagnostikk & Testing
-**Teknologier**: Ping, Traceroute, RTT-måling, ARP-analyse  
-**Nøkkellæring**: Systematisk nettverksfeilsøking og ytelsesmåling  
-**Relevans**: Overvåking og optimalisering av videokonferanse-kvalitet  
-
----
-
-## **Nettverksdesign & Arkitektur**
-
-### Enterprise Nettverksdesign
-**Teknologier**: Nettverkstopologi-design, subnetting, VLSM  
-**Nøkkellæring**: Skalerbar nettverksarkitektur og adresseringsskjemaer  
-**Relevans**: Infrastrukturkrav for **store-skala videotjenester**  
-
-### Subnetting & VLSM
-**Teknologier**: IP-adressering, subnet-optimalisering, adresserom-planlegging  
-**Nøkkellæring**: Nettverksressurs-optimalisering og skalering  
-**Relevans**: Design av skalerbare sky-videokonferansenettverk  
-
----
-
-## **Utviklede Tekniske Ferdigheter**
-
-### **Nettverksprogrammering**
-- Socket-nivå kommunikasjon fra protokoll-analyse
-- Samtidig tilkoblings-håndtering fra infrastructure-konfigurasjon
-- **Load balancing-strategier** fra HSRP og EtherChannel
-- Ytelses-optimalisering fra Wireshark-analyse
-
-### **Distribuerte Systemer**
-- **Tjenesteoppdagelse** via DHCP og IPv6 auto-konfigurasjon
-- **Feiltoleranse** gjennom redundans-protokoller (HSRP, STP)
-- **Skaleringsplanlegging** via nettverks-designprosjekter
-- **Enterprise security** på infrastruktur-nivå
-
-### **Protokoll-forståelse**
-- **TCP/UDP-oppførsel** fra pakke-nivå analyse
-- **Sanntids-kommunikasjon** krav fra ytelsestesting
-- **Quality of Service** fra optimaliserings-laber
-- **IPv4/IPv6 dual-stack** for global tilkobling
-
-
+## What I learned
+- Configuring and troubleshooting enterprise networks from the command line.
+- How redundancy protocols (HSRP, STP) keep a network available when something fails.
+- Controlling traffic with ACLs, and reading protocol behaviour at packet level.
